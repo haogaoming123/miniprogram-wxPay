@@ -1,0 +1,5 @@
+
+<view class='container'>
+  <web-view src='{{newsurl}}'></web-view>
+</view>
+

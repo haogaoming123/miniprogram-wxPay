@@ -1,0 +1,17 @@
+var comm = require("./comm.wxs");
+
+console.log(comm.foo);
+console.log(comm.bar("马麦提"));
+console.log(comm.msg);
+
+var a = getRegExp("x", "img");
+console.log("-----------------start------------------");
+console.log("x" === a.source);
+console.log(true === a.global);
+console.log(true === a.ignoreCase);
+console.log(true === a.multiline);
+console.log("-----------------end------------------");
+
+var json = JSON.stringify(comm.array);
+console.log("json化一个对象：" + json);
+console.log("解析json字符串：" + JSON.parse(json));
